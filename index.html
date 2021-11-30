@@ -132,6 +132,11 @@ span.psw {
         <a href="https://github.com/Pratik-2003/Test-Website" class="btn">View on GitHub</a>
     </section>
      <script type="text/javascript">
+	 function customDimension1(){
+	window.VWO = window.VWO || [];
+	// Replace TAG_VALUE with your actual tag value
+	window.VWO.push(['tag', 'ClickonLoginbutton', 'clicked', 'user']);
+	     };
 	 function testRevenue(){    
 	window._vis_opt_queue = window._vis_opt_queue || [];
 	window._vis_opt_queue.push(function() {_vis_opt_revenue_conversion("200");});
@@ -202,7 +207,7 @@ span.psw {
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit" style="color: white;">Login</button>
+    <button type="submit" style="color: white;" oncllick="customDimension1()">Login</button>
      
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
