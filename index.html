@@ -133,9 +133,10 @@ span.psw {
     </section>
      <script type="text/javascript">
 	 function customDimension1(){
-	window.VWO = window.VWO || [];
-	// Replace TAG_VALUE with your actual tag value
-	window.VWO.push(['tag', 'ClickonLoginbutton', 'clicked', 'user']);
+		 VWO.visitor({ "ClickonLoginbutton": "click" }) 
+// 	window.VWO = window.VWO || [];
+// 	// Replace TAG_VALUE with your actual tag value
+// 	window.VWO.push(['tag', 'ClickonLoginbutton', 'clicked', 'user']);
 	     };
 	 function CD2(){
 	window.VWO = window.VWO || [];
