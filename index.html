@@ -137,6 +137,11 @@ span.psw {
 	// Replace TAG_VALUE with your actual tag value
 	window.VWO.push(['tag', 'ClickonLoginbutton', 'clicked', 'user']);
 	     };
+	 function CD2(){
+	window.VWO = window.VWO || [];
+	// Replace TAG_VALUE with your actual tag value
+	window.VWO.push(['tag', 'testValue', 'true', 'session']);
+	 }
 	 function testRevenue(){    
 	window._vis_opt_queue = window._vis_opt_queue || [];
 	window._vis_opt_queue.push(function() {_vis_opt_revenue_conversion("200");});
@@ -220,7 +225,7 @@ span.psw {
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn" style="color: white;">Cancel</button>
+    <button type="button" class="cancelbtn" style="color: white;" onclick="CD2()">Cancel</button>
      <a class="buttonredirect" href="http://pratiksisodia.wingified.com/?id=3000150">Redirect</a>
       <div class="custom-select">
          <select id="bkrregistration" name="bkrregistration" tabindex="24">
