@@ -195,6 +195,33 @@ span.psw {
 	 trackGoal(236);
 	 trackGoal(237);
 };	
+	     //For custom dimension gender
+	function genderMale(){
+		window.VWO = window.VWO || [];
+		// Replace TAG_VALUE with your actual tag value
+		window.VWO.push(['tag', 'gender', 'male', 'user']);
+		// Replace TAG_VALUE with your actual tag value
+		window.VWO.push(['tag', 'gender-sub1', 'male', 'user']);
+		window.VWO.push(['tag', 'gender-sub2', 'male', 'session']);
+		
+	 };
+	     
+	  function genderFemale(){
+		window.VWO = window.VWO || [];
+		// Replace TAG_VALUE with your actual tag value
+		window.VWO.push(['tag', 'gender', 'female', 'user']);
+		window.VWO.push(['tag', 'gender-sub1', 'female', 'user']);
+		window.VWO.push(['tag', 'gender-sub2', 'female', 'session']);
+	 };
+	     
+	 function genderOther(){	
+		window.VWO = window.VWO || [];
+		// Replace TAG_VALUE with your actual tag value
+		window.VWO.push(['tag', 'gender','other', 'user']);
+		window.VWO.push(['tag', 'gender-sub1', 'other', 'user']);
+		window.VWO.push(['tag', 'gender-sub2', 'other', 'session']);
+	 };
+	
 	
 </script>
     <section class="main-content">
@@ -234,6 +261,11 @@ span.psw {
             <option label="Nee" value="number:2" selected="selected">Nee</option>
             <option label="Weet ik niet" value="number:3">Weet ik niet</option></select>
       </div>
+	<span>
+		<button type="button" class="genderbtn" style="color: white;" onclick="genderMale()">Male</button>
+		<button type="button" class="genderbtn" style="color: grey;" onclick="genderFemale()">Female</button>
+		<button type="button" class="genderbtn" style="color: orange;" onclick="genderOther()">Other</button>
+	  </span>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
